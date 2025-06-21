@@ -5,7 +5,7 @@ create table tb_colaboradores(
 id bigint auto_increment primary key,
 nome varchar(255) not null,
 cargo varchar(255) not null,
-salario decimal(255) not null,
+salario decimal(65) not null,
 setor varchar(255)
 );
 
@@ -17,5 +17,5 @@ insert into tb_colaboradores(nome, cargo, salario, setor) values
 ('Eduarda Melo', 'Analista de Marketing', 4100.00, 'Marketing');
 
 select * from tb_colaboradores where salario > 2000.00;
-select * from tb_colaboradores where salario < 2000.00
+select * from tb_colaboradores where salario < 2000.00;
 update tb_colaboradores set salario = 2200.00 where id = 4
